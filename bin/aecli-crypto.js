@@ -127,9 +127,9 @@ function decodeAddress (options) {
 }
 
 program
-  .command('decode <base58>')
+  .command('decode <base58address>')
   .description('Decodes base58 address to hex')
-  .option('-a, --address base58]', 'Address to decrypt', '.')
+  .option('-a, --address base58address]', 'Address to decrypt', '.')
   .action(decodeAddress)
 
 program
